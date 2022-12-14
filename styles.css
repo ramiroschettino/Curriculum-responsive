@@ -1,8 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap');
 
+:root {
+    --verde-oscuro: #3a5a40;
+    --verde-claro: #a3b18a;
+}
+
+::selection {
+    color: #3a5a40;
+    background: #a3b18a;
+  }
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--verde-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1)
+}
+
+.container .left_side{
+    position: relative;
+    background-color: var(--verde-oscuro);
+    padding: 40px;
+}
+
+.container .right_side{
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
 }
